@@ -58,8 +58,7 @@ pub fn fetch() {
     untar_rust.arg("-zxf")
         .arg("rust/rust.tar.gz")
         .arg("-C")
-        .arg("rust")
-        .arg("--strip-components=1");
+        .arg("rust");
     run(&mut untar_rust);
 }
 
